@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Yum Pizza Order</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{box-sizing: border-box;}
+            body{font-family: Arial,Helvetica,sans-serif;}            
+            header{background-color: indianred;padding: 10px;text-align: center;font-size: 25px;color: white;}            
+            section{display: -webkit-flex;display: flex;}            
+            nav{-webkit-flex: 1;-ms-flex: 1;flex: 1;background: mistyrose;padding: 20px;}
+            nav ul {list-style-type: none;padding: 0;}
+            article {-webkit-flex: 3;-ms-flex: 3;flex: 3;background-color: aliceblue;padding: 10px;}
+            footer {background-color: indianred;padding: 20px;text-align: center;color: white;}
+            @media (max-width: 600px) {section {-webkit-flex-direction: column;flex-direction: column;}}
+        </style>
+    </head>
+    <body>
+        <form>
+            <header><h1>Welcome to Yum</h1></header>
+            
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="Order1.html">Order</a></li>
+                        <li><a href="CheckOrderStatus.html">Check Order Status</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <h2>Pizza that We serve!</h2>
+                    <p>Click Order to Order Pizza!</p>
+                    <figure>
+                        <img src="Pizza/pepperoni.jfif" alt="Beef Pepperoni Pizza">
+                        <figcaption>Beef Pepperoni <br>RM8.00</figcaption>
+                    </figure>
+            
+                    <figure>
+                        <img src="Pizza/tuna.jfif" alt="Island Tuna Pizza">
+                        <figcaption>Island Tuna <br>RM7.00</figcaption>
+                    </figure>
+                        
+                    <figure>
+                        <img src="Pizza/chicken.jfif" alt="Chicken Supreme Pizza">
+                        <figcaption>Chicken Supreme <br>RM9.00</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="Pizza/super.jfif" alt="Super Supreme Pizza">
+                        <figcaption>Super Supreme <br>RM10.00</figcaption>
+                    </figure>                              
+                </article>
+            </section>
+            <footer></footer>
+        </form>
+    </body>
+</html>

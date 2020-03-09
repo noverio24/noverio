@@ -1,0 +1,35 @@
+#ifndef WINDOW_H
+#define WINDOW_H
+
+class Window
+{
+private:
+	int x, y;            
+	int w, h;   
+	int color;           
+
+public:
+	Window(int _x=0, int _y=0, int _w=0, int _h=0, int _color=0);
+
+	int getX() const;     
+	int getY() const;     
+	int getW() const;
+	int getH() const;
+
+	int getColor() const;
+
+	int getRight() const;  
+	int getBottom() const; 
+
+	void setX(int value);
+	void setY(int value);
+	void setW(int value);
+	void setH(int value);
+	void setSize(int _w, int _h);
+	void setColor(int value);
+	void set(int _x, int _y, int _w, int _h, int _color);
+
+	void draw() const;
+};
+
+#endif

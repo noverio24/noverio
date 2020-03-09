@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+            *{box-sizing: border-box;}
+            body{font-family: Arial,Helvetica,sans-serif;}            
+            header{background-color: indianred;padding: 10px;text-align: center;font-size: 25px;color: white;}            
+            section{display: -webkit-flex;display: flex;}            
+            nav{-webkit-flex: 1;-ms-flex: 1;flex: 1;background: mistyrose;padding: 20px;}
+            nav ul {list-style-type: none;padding: 0;}
+            article {-webkit-flex: 3;-ms-flex: 3;flex: 3;background-color: aliceblue;padding: 9px;}
+            footer {background-color: indianred;padding: 10px;text-align: center;color: white;}
+            @media (max-width: 600px) {section {-webkit-flex-direction: column;flex-direction: column;}}
+        </style>
+    </head>
+     <body>
+        <form action="order" method="GET">
+            <header><h1>Welcome to Yum Pizza</h1></header>
+
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="Order.html">Order</a></li>
+                        <li><a href="#">Check Order Status</a></li>
+                        <li><a href="#">Payment</a></li>
+                    </ul>
+                </nav>
+                <article>
+                    <h2>Select pizza you want to buy</h2>
+                    <img src="Pizza/pepperoni.jfif" alt="Beef Pepperoni Pizza"><br>
+                    <input type="radio" name="pizza" value="Beef Pepperoni">Beef Pepperoni (RM8.00)<br><br>
+                    <img src="Pizza/tuna.jfif" alt="Island Tuna Pizza"><br>
+                    <input type="radio" name="pizza" value="Island Tuna">Island Tuna (RM7.00)<br><br>
+                    <img src="Pizza/chicken.jfif" alt="Chicken Supreme Pizza"><br>
+                    <input type="radio" name="pizza" value="Chicken Supreme">Chicken Supreme (RM9.00)<br><br>
+                    <img src="Pizza/super.jfif" alt="Super Supreme Pizza"><br>
+                   <input type="radio" name="pizza" value="Super Supreme">Super Supreme (RM10.00)<br> <br>         
+                   <input type="radio" name="pizza" value=""  checked="">none<br><br>    
+                </article>
+                <br><br><br>
+                
+                <article>
+                    <h2>Select Drink you want to buy</h2>
+                   
+                    <input type="radio" name="toping" value="cheese">Cheese (RM3.00)<br><br>
+                 
+                    <input type="radio" name="toping" value="mushroom">mushroom (RM2.00)<br><br>
+                   
+                    <input type="radio" name="toping" value="pepperoni">pepperoni (RM3.00)<br><br>
+                   
+                    <input type="radio" name="toping" value="sosis">sosis (RM1.00)<br><br>            
+                    
+                    <input type="radio" name="toping" value="" checked=""> none<br><br>     
+                </article>
+                <article>
+                    <h2>Select Drink you want to buy</h2>
+                    <img src="Drink/CC.jfif" alt="Coca Cola"><br>
+                    <input type="radio" name="drink" value="Coca Cola">Coca Cola (RM3.00)<br><br>
+                    <img src="Drink/NLT.jfif" alt="Nestea Lemon Tea"><br>
+                    <input type="radio" name="drink" value="Nestea Lemon Tea">Nestea Lemon Tea (RM2.00)<br><br>
+                    <img src="Drink/M.jfif" alt="Milo"><br>
+                    <input type="radio" name="drink" value="Milo">Milo (RM3.00)<br><br>
+                    <img src="Drink/MW.jfif" alt="Mineral Water"><br>
+                    <input type="radio" name="drink" value="Mineral Water">Mineral Water (RM1.00)<br><br>   
+                    <input type="radio" name="drink" value="" checked=""> none<br><br>     
+                </article>
+                
+                
+                
+            </section>
+            <footer><input type="submit" value="Order"></footer>
+        </form>
+    </body>
+</html>

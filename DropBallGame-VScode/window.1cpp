@@ -1,0 +1,36 @@
+#include "Window.hpp"
+#include <graphics.h>
+
+Window::Window(int _x, int _y, int _w, int _h, int _color)
+{
+	set(_x, _y, _w, _h, _color);
+}
+
+int Window::getX() const { return x; }
+int Window::getY() const { return y; }
+int Window::getW() const { return w; }
+int Window::getH() const { return h; }
+int Window::getColor() const { return color; }
+int Window::getRight() const { return x + w; }
+int Window::getBottom() const { return y + h; }
+
+void Window::setX(int value) { x = value; }
+void Window::setY(int value) { y = value; }
+void Window::setW(int value) { w = value; }
+void Window::setH(int value) { h = value; }
+void Window::setSize(int _w, int _h) {w = _w;	h = _h;}
+void Window::setColor(int value) { color = value; }
+void Window::set(int _x, int _y, int _w, int _h, int _color)
+{
+	x = _x;
+	y = _y;
+	w = _w;
+	h = _h;
+	color = _color;
+}
+
+void Window::draw() const
+{
+	setfillstyle(SOLID_FILL,color);
+	bar(x,y,x+w, y+h);
+}
